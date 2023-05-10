@@ -593,6 +593,10 @@ img {
   padding: 1rem;
 }
 
+#card__desactivated .card__content, #card__desactivated .card__scale2 {
+  background: rgb(214, 214, 214);
+}
+
 .card__headline {
   font-size: 1.5rem;
   font-weight: var(--font-semi);
