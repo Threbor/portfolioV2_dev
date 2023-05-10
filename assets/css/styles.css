@@ -368,6 +368,13 @@ img {
   text-align: center;
 }
 
+.about__container .bx-rocket{
+  font-size: 8rem;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .about__subtitle {
   margin-bottom: var(--mb-2);
 }
@@ -685,7 +692,7 @@ img {
   font-weight: var(--font-semi);
   padding: 1rem;
   border-radius: .5rem;
-  border: 1.5px solid var(--second-color);
+  border: 1.5px solid var(--first-color);
   outline: none;
   margin-bottom: var(--mb-4);
 }
@@ -698,6 +705,11 @@ img {
   cursor: pointer;
   margin-left: auto;
 }
+
+.contact__form {
+  padding: 1rem;
+}
+
 
 /*  FOOTER */
 .footer {

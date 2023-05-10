@@ -57,12 +57,9 @@
 
             <!-- A propos -->
             <section class="about section " id="about">
-                <h2 class="section-title">A propos</h2>
+                <h2 class="section-title">Mes prestations</h2>
                 <div class="about__container bd-grid">
-                    <div class="about__img">
                       <i class='bx bx-rocket'></i>
-                    </div>
-
                     <div>
                         <h2 class="about__subtitle">Faites décoller votre activité</h2>
                         <p class="about__text">Comptez sur un développeur dévoué pour vous accompagner dasn votre constructions de votre existance numlériques. Je vous fais des sites web et des web app. Vous pouvez télécharger mon CV.</p>
@@ -317,12 +314,22 @@
                 <h2 class="section-title">Contactez moi</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Envoyer" class="contact__button button">
-                    </form>
+                    <!-- <form action="" class="contact__form" id="contact-form">
+                        <input type="text" name="user_name" required placeholder="Name" class="contact__input">
+                        <input type="mail" name="user_email" required placeholder="Email" class="contact__input">
+                        <textarea name="user_message" required placeholder="Ecrivez votre message"cols="0" rows="10" class="contact__input" id="contact-message"></textarea>
+                        <input type="submit" value="Envoyer" class="contact__button button">
+                    </form> -->
+                    <form class="contact__form" id="contact-form">
+                      <input type="hidden" name="contact_number">
+                      <label>Nom & Prénom</label>
+                      <input class="contact__input" type="text" name="user_name">
+                      <label>Email</label>
+                      <input class="contact__input" type="email" name="user_email">
+                      <label>Message</label>
+                      <textarea class="contact__input" name="message" cols="0" rows="10"></textarea>
+                      <input class="contact__button button" type="submit" value="Send">
+                  </form>
                 </div>
             </section>
         </main>
@@ -341,7 +348,7 @@
 
         <!-- SCROLL REVEAL -->
         <script src="https://unpkg.com/scrollreveal"></script>
-
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
         <!-- MAIN JS -->
         <script src="assets/js/main.js"></script>
     </body>
