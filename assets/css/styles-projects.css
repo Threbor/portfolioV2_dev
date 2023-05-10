@@ -1,0 +1,58 @@
+.banner {
+  background-image: url(../img/SwappyMokupsV3-min.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 30vh;
+  width: 100%;
+  position: relative;
+}
+
+.banner__text {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  bottom: 0;
+  padding: .5rem 1.5rem;
+  border-radius: 1rem;
+  background-color: white;
+  border: solid 1px var(--first-color);
+}
+
+
+img {
+  border: solid 1px var(--first-color);
+  border-radius: 1rem;
+}
+
+.project__section {
+  padding: 1.5rem;
+}
+
+.project__container {
+  row-gap: 1rem;
+  text-align: center;
+}
+
+.project__container p {
+  padding: 0 1rem;
+}
+
+.project__container a {
+  width: 30%;
+  margin: auto
+}
+
+
+#youtube_icon {
+  font-size: 3rem;
+  color: red;
+  transition: .3s;
+}
+
+#video_link:hover #youtube_icon{
+  color: var(--first-color);
+}
+
+
+/* Navbar tes */
