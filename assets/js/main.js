@@ -61,6 +61,7 @@ sr.reveal('.banner__text, .section-title, .project__container, #youtube_icon',{ 
 
 // contact form
 
+const contactMessage = document.getElementById('contact_message');
 window.onload = function() {
   document.getElementById('contact-form').addEventListener('submit', function(event) {
       event.preventDefault();
