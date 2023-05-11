@@ -52,7 +52,7 @@ const sr = ScrollReveal({
 
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{});
 sr.reveal('.home__img, .about__subtitle, .about__text, .about_shadow, .skills__img',{delay: 400});
-sr.reveal('.home__social-icon',{ interval: 200});
+sr.reveal('.home__social-icon, .bx-rocket',{ interval: 200});
 sr.reveal('.work__card, .contact__input, .contact__form label',{interval: 200});
 sr.reveal('.skills__data',{interval: 100});
 
@@ -61,9 +61,15 @@ sr.reveal('.banner__text, .section-title, .project__container, #youtube_icon',{ 
 
 // contact form
 
-const contactMessage = document.getElementById('contact_message');
+const contactForm = document.getElementById('contact-form');
+const senderNames = document.getElementById('sender-names').value
+const contactGreetings = document.getElementById('contact-geetings');
+const contactMessage = document.getElementById('contact-message');
+const popupMessage = document.getElementById('popup-message');
+
+
 window.onload = function() {
-  document.getElementById('contact-form').addEventListener('submit', function(event) {
+  contactForm.addEventListener('submit', function(event) {
       event.preventDefault();
       // generate a five digit number for the contact_number variable
       this.contact_number.value = Math.random() * 100000 | 0;
@@ -71,8 +77,21 @@ window.onload = function() {
       emailjs.sendForm('service_y894zb9', 'template_f6xsmu7', this, 'tCrSFgEm6pbHr-AOm')
           .then(function() {
               console.log('SUCCESS!');
+              contactGreetings.textContent = `Bienvenue ${senderNames}!`;
+              contactMessage.textContent = `Votre message a bien été envoyé! Je vous répondrai dès que possible.`;
+
+              popupMessage.classList.add('show_popup');
+              setTimeout(function(){
+                popupMessage.classList.remove('show_popup');
+              }, 5000);
+
+
+              contactForm.reset();
+
           }, function(error) {
               console.log('FAILED...', error);
+              contactGreetings.textContent = `Bonjour ${senderNames}. Il y a eu une erreur lors de l'envoi!`;
+              contactMessage.textContent = "Je vous prie de bien vouloir essayer ultérieurmeent.";
           });
   });
 }
