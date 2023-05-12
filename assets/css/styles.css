@@ -401,13 +401,13 @@ img {
   position: relative;
 }
 .about__website p, .about__webapp p{
-  width: 66%;
+  width: 80%;
   margin: 0rem auto;
 }
 
 .about_shadow {
   background-color: rgb(255, 255, 255); /* ajustez l'opacité (0.5) pour assombrir ou éclaircir l'image */
-  height: 325px;
+  height: 400px;
   width: 325px;
   filter: blur(50px);
   position: absolute;
@@ -436,6 +436,7 @@ img {
 /*  SKILLS */
 .skills__container {
   row-gap: 2rem;
+  margin: 1rem;
   text-align: center;
 }
 
@@ -472,8 +473,7 @@ img {
 .skills__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1.5rem;
-  width: 84vw;
+  grid-gap: 1rem;
   margin: auto;
   justify-content: center;
 }
@@ -490,6 +490,10 @@ img {
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
 }
 
+.skills__names {
+  font-size: 1rem;
+  font-weight: var(--font-medium);
+}
 .skills__icon {
   font-size: 2rem;
   color: var(--first-color);
@@ -611,13 +615,13 @@ img {
 .card__headline {
   font-size: 1.5rem;
   font-weight: var(--font-semi);
-  margin-bottom: var(--mb-2);
+  margin-bottom: .8rem;
 }
 
 .card__subhead {
   font-size: 1rem;
   font-weight: var(--font-medium);
-  margin-bottom: var(--mb-2);
+  margin-bottom: .5rem;
 }
 
 .card__description {
