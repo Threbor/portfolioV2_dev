@@ -710,8 +710,6 @@ img {
 }
 
 .contact__message_window {
-  font-size: var(--h3-font-size);
-  font-weight: var(--font-semi);
   position: fixed;
   bottom: 7rem;
   left: -50%;
@@ -722,8 +720,22 @@ img {
   border-radius: 1rem;
 }
 
+.contact__geetings {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-semi);
+}
+
+.contact__message {
+  font-size: var(--normal-font-size);
+}
+
 .show_popup {
   animation: show_popup 5s ease-in-out;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: .5;
 }
 
 @keyframes show_popup {
@@ -731,19 +743,19 @@ img {
     left: -50%;
   }
 
-  15% {
+  05% {
     left: 55%;
   }
 
-  20% {
+  10% {
     left: 50%;
   }
 
-  80% {
+  90% {
     left: 50%;
   }
 
-  85% {
+  95% {
     left: 45%;
   }
 

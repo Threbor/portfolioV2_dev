@@ -62,15 +62,18 @@ sr.reveal('.banner__text, .section-title, .project__container, #youtube_icon',{ 
 // contact form
 
 const contactForm = document.getElementById('contact-form');
-const senderNames = document.getElementById('sender-names').value
+// const senderNames = document.getElementById('sender-names').value
 const contactGreetings = document.getElementById('contact-geetings');
 const contactMessage = document.getElementById('contact-message');
 const popupMessage = document.getElementById('popup-message');
+const submitButton = document.getElementById('submit-button');
 
 
 window.onload = function() {
   contactForm.addEventListener('submit', function(event) {
+      submitButton.classList.add('disabled')
       event.preventDefault();
+      const senderNames = document.getElementById('sender-names').value
       // generate a five digit number for the contact_number variable
       this.contact_number.value = Math.random() * 100000 | 0;
       // these IDs from the previous steps
@@ -78,20 +81,28 @@ window.onload = function() {
           .then(function() {
               console.log('SUCCESS!');
               contactGreetings.textContent = `Bienvenue ${senderNames}!`;
-              contactMessage.textContent = `Votre message a bien été envoyé! Je vous répondrai dès que possible.`;
+              contactMessage.textContent = `✅ Votre message a bien été envoyé! Je vous répondrai dès que possible.`;
 
+              // permet l'animation du popup
               popupMessage.classList.add('show_popup');
               setTimeout(function(){
                 popupMessage.classList.remove('show_popup');
               }, 5000);
 
-
-              contactForm.reset();
+              // réinitialise le formulaire
+              setTimeout(() => {
+                contactForm.reset();
+              }, 5000);
 
           }, function(error) {
+            // message d'erreur en cas d'échec de emailJS
               console.log('FAILED...', error);
               contactGreetings.textContent = `Bonjour ${senderNames}. Il y a eu une erreur lors de l'envoi!`;
               contactMessage.textContent = "Je vous prie de bien vouloir essayer ultérieurmeent.";
           });
+
+      setTimeout(() => {
+        submitButton.classList.remove('disabled');
+      }, 6200);
   });
 }
