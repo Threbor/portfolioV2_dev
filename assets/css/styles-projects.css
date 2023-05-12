@@ -20,10 +20,31 @@
   border: solid 1px var(--first-color);
 }
 
+.banner i {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
 
 img {
   border: solid 1px var(--first-color);
   border-radius: 1rem;
+}
+
+
+.project__social-icon{
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem;
+}
+
+.project__social-icon i {
+  font-size: 3rem;
+  color: var(--first-color);
+}
+
+.bx-link-external {
+  color: var(--first-color);
 }
 
 .project__section {
@@ -36,9 +57,6 @@ img {
   text-align: center;
 }
 
-.project__container p {
-  padding: 0 1rem;
-}
 
 .project__container a {
   width: 30%;
@@ -47,7 +65,7 @@ img {
 
 
 #youtube_icon {
-  font-size: 3rem;
+  font-size: 5rem;
   color: red;
   transition: .3s;
 }

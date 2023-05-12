@@ -13,9 +13,9 @@
   --third-color: hsl(var(--hue-color), 77%, 26%);
   /* Fuente y tipografia */
   --body-font: 'Poppins', sans-serif;
-  --big-font-size: 2rem;
-  --h2-font-size: 1.25rem;
-  --normal-font-size: .809rem;
+  --big-font-size: 3rem;
+  --h2-font-size: 2rem;
+  --normal-font-size: 1.2rem;
   --smaller-font-size: .75rem;
   /* Margenes */
   --mb-2: 1rem;
@@ -90,12 +90,12 @@ img {
 .section-title::after {
   position: absolute;
   content: '';
-  width: 64px;
+  width: 10rem;
   height: 0.2rem;
   left: 0;
   right: 0;
   margin: auto;
-  top: 2rem;
+  top: 3rem;
   background-color: var(--first-color);
 }
 
@@ -694,6 +694,7 @@ img {
 .contact_text {
   text-align: center;
 }
+
 .contact__input {
   width: 100%;
   font-size: var(--normal-font-size);
