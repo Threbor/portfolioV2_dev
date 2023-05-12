@@ -1,0 +1,78 @@
+.banner {
+  background-image: url(../img/exeptionHome-min.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 30vh;
+  width: 100%;
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.banner__text {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  bottom: 0;
+  padding: .5rem 1.5rem;
+  border-radius: 1rem;
+  background-color: white;
+  border: solid 1px var(--first-color);
+}
+
+.banner i {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+img {
+  border: solid 1px var(--first-color);
+  border-radius: 1rem;
+}
+
+
+.project__social-icon{
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem;
+}
+
+.project__social-icon i {
+  font-size: 3rem;
+  color: var(--first-color);
+}
+
+.bx-link-external {
+  color: var(--first-color);
+}
+
+.project__section {
+  padding: 1.5rem;
+  padding-top: 0;
+}
+
+.project__container {
+  row-gap: 1rem;
+  text-align: center;
+}
+
+
+.project__container a {
+  width: 30%;
+  margin: auto
+}
+
+
+#youtube_icon {
+  font-size: 5rem;
+  color: red;
+  transition: .3s;
+}
+
+#video_link:hover #youtube_icon{
+  color: var(--first-color);
+}
+
+
+/* Navbar tes */
