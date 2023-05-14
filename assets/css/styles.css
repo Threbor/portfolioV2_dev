@@ -441,6 +441,7 @@ img {
 
 .skills__subtitle {
   margin-bottom: var(--mb-2);
+  text-align: center;
 }
 
 
@@ -598,7 +599,6 @@ img {
 
 .card__content {
   background: rgb(255, 255, 255);
-  width: 100%;
   height: 50%;
   padding: 1rem;
 }
