@@ -76,3 +76,16 @@ img {
 
 
 /* Navbar tes */
+
+@media screen and (min-width: 600px) {
+  .project__2columns {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin: auto;
+  }
+
+  .project__centered_p {
+    max-width: 800px;
+    margin: auto;
+  }
+}
