@@ -1,5 +1,4 @@
 .banner {
-  background-image: url(../img/SwappyMokupsV3-min.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -7,6 +6,14 @@
   width: 100%;
   position: relative;
   margin-bottom: 5rem;
+}
+
+#banner__swappy {
+  background-image: url(../img/SwappyMokupsV3-min.png);
+}
+
+#banner__exeption {
+  background-image: url(../img/exeptionHome-min.png);
 }
 
 .banner__text {
@@ -87,5 +94,11 @@ img {
   .project__centered_p {
     max-width: 800px;
     margin: auto;
+  }
+}
+
+@media screen and (min-width: 820px) {
+  .banner {
+    height: 70vh;
   }
 }
