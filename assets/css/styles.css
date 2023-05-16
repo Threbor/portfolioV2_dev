@@ -922,7 +922,8 @@ img {
     margin: 0;
   }
   .nav__text {
-    font-size: .9rem;
+    font-size: .7rem;
+    padding-right: .4rem;
   }
   .section {
     padding-top: 4rem;
@@ -990,6 +991,14 @@ img {
   }
 }
 
+
+@media screen and (min-width: 850px) {
+  .nav__text {
+    font-size: .9rem;
+  }
+}
+
+
 @media screen and (min-width: 858px) {
   .home {
     max-width: 650px;
@@ -999,9 +1008,10 @@ img {
     height: 300px;
 
   }
+
 }
 
-@media screen and (min-width: 930px) {
+@media screen and (min-width: 965px) {
   .nav__text {
     font-size: var(--small-font-size);
   }
