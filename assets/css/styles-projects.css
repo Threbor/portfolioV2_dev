@@ -16,6 +16,10 @@
   background-image: url(../img/exeptionHome-min.png);
 }
 
+#banner__assembly {
+  background-image: url(../img/assembly_banner_2.png);
+}
+
 .banner__text {
   position: absolute;
   left: 50%;
